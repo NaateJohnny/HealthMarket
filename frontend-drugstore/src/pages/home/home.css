@@ -1,0 +1,16 @@
+.background-home{
+    background-color: #00B5EC;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.text-inicial{
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+p{
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 30px;
+}

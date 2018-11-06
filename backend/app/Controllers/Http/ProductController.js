@@ -7,6 +7,7 @@
 /**
  * Resourceful controller for interacting with products
  */
+const Product = use('App/Models/Product')
 class ProductController {
   /**
    * Show a list of all products.
@@ -18,6 +19,8 @@ class ProductController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    const products = await Product.all()
+    response.send(products)
   }
 
   /**
