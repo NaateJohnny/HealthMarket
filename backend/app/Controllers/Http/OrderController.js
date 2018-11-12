@@ -5,12 +5,12 @@
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 /**
- * Resourceful controller for interacting with products
+ * Resourceful controller for interacting with orders
  */
-class ProductController {
+class OrderController {
   /**
-   * Show a list of all products.
-   * GET products
+   * Show a list of all orders.
+   * GET orders
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -21,8 +21,8 @@ class ProductController {
   }
 
   /**
-   * Render a form to be used for creating a new product.
-   * GET products/create
+   * Render a form to be used for creating a new order.
+   * GET orders/create
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -33,8 +33,8 @@ class ProductController {
   }
 
   /**
-   * Create/save a new product.
-   * POST products
+   * Create/save a new order.
+   * POST orders
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -44,8 +44,8 @@ class ProductController {
   }
 
   /**
-   * Display a single product.
-   * GET products/:id
+   * Display a single order.
+   * GET orders/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -56,8 +56,8 @@ class ProductController {
   }
 
   /**
-   * Render a form to update an existing product.
-   * GET products/:id/edit
+   * Render a form to update an existing order.
+   * GET orders/:id/edit
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -68,8 +68,8 @@ class ProductController {
   }
 
   /**
-   * Update product details.
-   * PUT or PATCH products/:id
+   * Update order details.
+   * PUT or PATCH orders/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -79,8 +79,8 @@ class ProductController {
   }
 
   /**
-   * Delete a product with id.
-   * DELETE products/:id
+   * Delete a order with id.
+   * DELETE orders/:id
    *
    * @param {object} ctx
    * @param {Request} ctx.request
@@ -90,4 +90,4 @@ class ProductController {
   }
 }
 
-module.exports = ProductController
+module.exports = OrderController
