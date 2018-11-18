@@ -3,7 +3,7 @@
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
-
+const Drugstore = use('App/Models/Drugstore')
 /**
  * Resourceful controller for interacting with drugstores
  */
@@ -18,6 +18,8 @@ class DrugstoreController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    const drugstore = await Drugstore.all()
+    return drugstore;
   }
 
   /**
@@ -29,9 +31,10 @@ class DrugstoreController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async create ({ request, response, view }) {
+  async create ({ request, response, auth }) {
+      const data = request.only(['social_name', 'cnpj', 'email'])
+      return await Drugstore.create({user_id: auth.user.id, ...data})
   }
-
   /**
    * Create/save a new drugstore.
    * POST drugstores

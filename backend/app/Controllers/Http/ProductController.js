@@ -7,6 +7,9 @@
 /**
  * Resourceful controller for interacting with products
  */
+
+ const Product = use('App/Models/Product')
+
 class ProductController {
   /**
    * Show a list of all products.
@@ -17,7 +20,9 @@ class ProductController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index ({ request, response, view }) {
+  async index ({ request, response }) {
+    const products = await Product.all()
+    return products;
   }
 
   /**
@@ -29,8 +34,11 @@ class ProductController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async create ({ request, response, view }) {
+  async create ({ request, response , params}) {
+    const product = request.only(['name','description', 'price', 'anvisa_code'])
+    return await Product.create({drugstore_id: params.id, ...product})
   }
+
 
   /**
    * Create/save a new product.

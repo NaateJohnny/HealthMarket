@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import 'bootstrap/dist/css/bootstrap-reboot.min.css';
-import 'jquery/dist/jquery.min.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
+import NavBar from './components/sidenav/navbar.component';
+
 import {Switch, Route} from 'react-router-dom';
 import HomePage from './pages/home/home';
-import Main from './components/main/main.component';
-import SideBar from './components/sidenav/sidenav.component';
-import OrdersPage from './pages/orders/orders.page';
+import OrderPage from './pages/orders/orders.page';
+import ProductPage from './pages/products/products.page';
+import Login from  './pages/login.page'
 
 class App extends Component {
+  componentWillMount(){
+    M.AutoInit();
+  }
   render() {
     return (
       <div>
-       <SideBar/> 
-          <Switch>
-            <Route path='/orders' component={OrdersPage}/>
-          </Switch> 
+        <NavBar/>
+        
+        <Switch>
+          <Route exact path="/" component={HomePage}/>
+          <Route path="/vendas" component={OrderPage}/>
+          <Route path="/produtos" component={ProductPage}/>
+          <Route path="/login" component={Login} />
+        </Switch>
       </div>
     );
   }

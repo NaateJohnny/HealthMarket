@@ -14,6 +14,10 @@ class AuthController {
         const token = await auth.attempt(email, password)
         return token;
     }
+
+    // async registerDrugstore({request, auth}){
+    //     const {email, password}= 
+    // }
 }
 
 module.exports = AuthController

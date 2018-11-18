@@ -18,3 +18,8 @@ const Route = use('Route')
 
 Route.post('/register', 'AuthController.register')
 Route.post('/authenticate', 'AuthController.authenticate')
+
+Route.post('/drugstores', "DrugstoreController.create").middleware('auth')
+Route.get('/drugstores', "DrugstoreController.index")
+
+Route.post('/drugstore/:id/products', "ProductController.create")
