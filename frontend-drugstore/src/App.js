@@ -7,7 +7,8 @@ import {Switch, Route} from 'react-router-dom';
 import HomePage from './pages/home/home';
 import OrderPage from './pages/orders/orders.page';
 import ProductPage from './pages/products/products.page';
-import Login from  './pages/login.page'
+import Login from  './pages/login.page';
+import NewProductPage from './pages/products/product-new.page'
 
 class App extends Component {
   componentWillMount(){
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path="/vendas" component={OrderPage}/>
           <Route path="/produtos" component={ProductPage}/>
           <Route path="/login" component={Login} />
+          <Route path="/new" component={NewProductPage} />
         </Switch>
       </div>
     );

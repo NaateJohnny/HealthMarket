@@ -4,12 +4,20 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
+const Order = use('App/Models/Order')
+const User = use('App/Models/User')
+const OrdemItem = use('App/Models/OrdemItem')
+const Database= use('Database')
 /**
  * Resourceful controller for interacting with orders
  */
 class OrderController {
+
+  async addOrderItem({request, response, auth}){ 
+    const ordemItem = request.only(['order_id', 'product_id',])
+  }
   /**
-   * Show a list of all orders.
+   * Show a list of all orders of drugstore.
    * GET orders
    *
    * @param {object} ctx
@@ -17,20 +25,15 @@ class OrderController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index ({ request, response, view }) {
+  async getAllOrdersByDrugstoreId ({ request, response, params }) {
+    const orders = await Database.from('orders')
+          .where({
+                  is_active: true,
+                  was_finalized: true} )
+     return orders;
   }
 
-  /**
-   * Render a form to be used for creating a new order.
-   * GET orders/create
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   * @param {View} ctx.view
-   */
-  async create ({ request, response, view }) {
-  }
+
 
   /**
    * Create/save a new order.
@@ -41,6 +44,7 @@ class OrderController {
    * @param {Response} ctx.response
    */
   async store ({ request, response }) {
+    const data = request.only([''])
   }
 
   /**

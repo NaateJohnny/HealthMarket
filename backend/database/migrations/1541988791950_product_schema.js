@@ -11,7 +11,6 @@ class ProductSchema extends Schema {
       table.string('description', 250)
       table.float('price')
       table.string('image_url')
-      table.string('anvisa_code')
       table.integer('drugstore_id')
         .unsigned()
         .notNullable()

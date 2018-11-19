@@ -8,7 +8,6 @@ class DrugstoreSchema extends Schema {
     this.create('drugstores', (table) => {
       table.increments()
       table.string('social_name').notNullable()
-      table.string('cnpj',14).notNullable().unique()
       table.string('phone',11)
       table.string('email')
       table.string('address', 100)
