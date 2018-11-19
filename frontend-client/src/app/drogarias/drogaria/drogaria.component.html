@@ -1,0 +1,13 @@
+<a [routerLink]="['/drogarias', drogaria.id]" >
+  <div class="place-info-box" [@drogariaAppeared]="drogariaState">
+    <span class="place-info-box-icon"><img [src]="drogaria.imagePath" /></span>
+
+    <div class="place-info-box-content">
+      <span class="place-info-box-text">{{drogaria.name}}</span>
+      <span class="place-info-box-star"><i class="fa fa-star"></i>{{drogaria.rating}}</span>
+      <span class="place-info-box-detail">{{drogaria.category}}</span>
+      <span class="place-info-box-detail">{{drogaria.deliveryEstimate}}</span>
+    </div>
+    <!-- /.info-box-content -->
+  </div>
+</a>

@@ -1,0 +1,39 @@
+<!-- Início do header -->
+<header class="main-header">
+<nav class="navbar navbar-static-top headerH3">
+  <div class="container">
+    <div class="navbar-header">
+      <a [routerLink]="['/']" class="header-logo"><img src="assets/img/HealthMarket_logo.png" /> </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+          <li routerLinkActive="active"><a [routerLink]="['/drogarias']"><strong>Drogarias</strong> </a></li>
+          <li routerLinkActive="active"><a [routerLink]="['/produtos']"><strong>Produtos</strong> </a></li>
+          <li routerLinkActive="active"><a [routerLink]="['/about']"><strong>Sobre</strong></a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <li class="user user-menu" routerLinkActive="active">
+          <a [routerLink]="['/order']">
+            <i class="fa fa-shopping-cart"></i>
+            &nbsp;
+            <strong> Carrinho </strong>
+          </a>
+      </li>
+      </ul>
+    </div>
+    
+    <mt-user-detail></mt-user-detail>
+
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+</header>
+<!-- Fim do header -->

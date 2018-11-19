@@ -1,0 +1,40 @@
+<!-- INÍCIO DO CONTEÚDO -->
+<section class="content-header">
+</section>
+
+<section class="content">
+  <!--
+  <div class="jumbotron welcome-jumbotron">
+     <h1>Bem vindo ao Health Market!</h1>
+     <p>
+       Está precisando de algo? Quer cuidar da sua saúde sem sair de casa?
+       <br>
+       Peça e receba prontamente na sua residência.
+     </p>
+     <a class="btn btn-default btn-lg" [routerLink]="['/drogarias']">Ver Drogarias</a>
+  </div>
+  -->
+  <a [routerLink]="['/produtos']">
+    <div class="slides"></div>
+  </a>
+  
+
+</section>
+
+<section class="content">
+    <div class="text-center">
+        <h2><strong>Recomendados</strong></h2>
+    </div>
+    <br>
+    <div class="row">
+      <div *ngFor="let item of itemPrice | async">
+        <div *ngIf="item.price < 7" class="col-sm-6 col-xs-12">
+          <mt-menu-item [menuItem]="item" (add)="shoppingCart.addItem($event)"></mt-menu-item>
+        </div>
+      </div>
+      <div style="display: none;">
+        <mt-shopping-cart #shoppingCart></mt-shopping-cart>
+      </div>
+    </div>
+</section>
+<!-- FIM DO CONTEÚDO -->

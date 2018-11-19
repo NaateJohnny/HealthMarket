@@ -1,0 +1,795 @@
+{
+  "drogarias": [
+    {
+      "id": "bread-bakery",
+      "name": "Herbal Heart",
+      "category": "Fármacia",
+      "deliveryEstimate": "25m",
+      "rating": 4.9,
+      "imagePath": "assets/img/drogarias/breadbakery.png",
+      "about": "A Herbal Heart tem 40 anos de mercado. Oferecendo os melhores produtos e preços.",
+      "hours": "Funciona de segunda à sexta, de 8h às 23h"
+    },
+    {
+      "id": "burger-house",
+      "name": "Pharmacy Pink",
+      "category": "Fármacia",
+      "deliveryEstimate": "100m",
+      "rating": 3.5,
+      "imagePath": "assets/img/drogarias/burgerhouse.png",
+      "about": "40 anos se especializando em DrugStore.",
+      "hours": "Funciona todos os dias, de 10h às 22h"
+    },
+    {
+      "id": "coffee-corner",
+      "name": "Pharmacy Green",
+      "category": "Fármacia",
+      "deliveryEstimate": "30-40m",
+      "rating": 4.8,
+      "imagePath": "assets/img/drogarias/coffeecorner.png",
+      "about": "A Pharmacy Green foi eleita a melhor fármacia da cidade.",
+      "hours": "Funciona de segunda à sábado, de 6h às 22h"
+    },
+    {
+      "id": "green-food",
+      "name": "Green Bio Pharmy",
+      "category": "Fármacia",
+      "deliveryEstimate": "75m",
+      "rating": 4.1,
+      "imagePath": "assets/img/drogarias/greenfood.png",
+      "about": "Ser saudável é na Green Bio Pharmy.",
+      "hours": "Somente em horário de almoço, das 11h às 15h"
+    },
+    {
+      "id": "ice-cream",
+      "name": "Natural Pharmy",
+      "category": "Fármacia",
+      "deliveryEstimate": "40-65m",
+      "rating": 4.5,
+      "imagePath": "assets/img/drogarias/icy.png",
+      "about": "A Natural Pharmy é uma fármacia inovadora.",
+      "hours": "Funciona todos os dias, de 10h às 1h"
+    },
+    {
+      "id": "tasty-treats",
+      "name": "Medicine Healthcare",
+      "category": "Fármacia",
+      "deliveryEstimate": "20m",
+      "rating": 4.4,
+      "imagePath": "assets/img/drogarias/tasty.png",
+      "about": "A Medicine Healthcare é a fármacia com mais tradição da cidade",
+      "hours": "Funciona de segunda à sábado, de 8h às 23h"
+    }
+  ],
+  "menu": [
+    {
+      "id": "dipirona-gotas",
+      "imagePath": "assets/img/medicamentos/cupcake.jpg",
+      "name": "Dipirona gotas",
+      "description": "Dipirona, indicado para dores e febre",
+      "price": 8.7,
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "id": "paracetamol",
+      "imagePath": "assets/img/medicamentos/donut.jpg",
+      "name": "Paracetamol",
+      "description": "Paracetamol, indicado para dores e febre",
+      "price": 2.5,
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "id": "combiron",
+      "imagePath": "assets/img/medicamentos/bread.jpg",
+      "name": "Combiron",
+      "description": "Combiron, glicinato férrico",
+      "price": 15.9,
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "id": "label-gotas",
+      "imagePath": "assets/img/medicamentos/burger.jpg",
+      "name": "Label gotas",
+      "description": "Cloridato de ranitidina",
+      "price": 18.5,
+      "drogariaId": "burger-house"
+    },
+    {
+      "id": "bio-zinc",
+      "imagePath": "assets/img/medicamentos/fries.jpg",
+      "name": "Bio Zinc",
+      "description": "Suplemento mineral à base de zinco",
+      "price": 5.5,
+      "drogariaId": "burger-house"
+    },
+    {
+      "id": "dprev",
+      "imagePath": "assets/img/medicamentos/coke.jpg",
+      "name": "DPrev",
+      "description": "Colecalciferol",
+      "price": 4.5,
+      "drogariaId": "burger-house"
+    },
+    {
+      "id": "koide-d",
+      "imagePath": "assets/img/medicamentos/capp.jpg",
+      "name": "Kóide D",
+      "description": "Maleato de dexclorfeniramina + betametasona",
+      "price": 9.9,
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "id": "iodara",
+      "imagePath": "assets/img/medicamentos/espreso.jpg",
+      "name": "Iodara gotas",
+      "description": "Suplemento mineral de iodo para lactentes e crianças",
+      "price": 12.5,
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "id": "dexfer",
+      "imagePath": "assets/img/medicamentos/starb.jpg",
+      "name": "Dexfer",
+      "description": "Ferripolimaltose - Sabor doce de leite",
+      "price": 15.6,
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "id": "ativday-osteo",
+      "imagePath": "assets/img/medicamentos/zlasagna.jpg",
+      "name": "Ativday Osteo",
+      "description": "Suplemento à base de cálcio",
+      "price": 14.9,
+      "drogariaId": "green-food"
+    },
+    {
+      "id": "benegrip",
+      "imagePath": "assets/img/medicamentos/greensandwich.jpg",
+      "name": "Benegrip com 6 comprimidos",
+      "description": "É para sintomas das gripes e resfriados e processos alérgicos.",
+      "price": 10.5,
+      "drogariaId": "green-food"
+    },
+    {
+      "id": "eno-limao",
+      "imagePath": "assets/img/medicamentos/ceasar.jpg",
+      "name": "Sal De Fruta Eno Limão Efervescente 2x5g",
+      "description": "É para alívio de azia, má digestão e outros transtornos estomacais.",
+      "price": 33.9,
+      "drogariaId": "green-food"
+    },
+    {
+      "id": "desol-gotas",
+      "imagePath": "assets/img/medicamentos/sunday.jpg",
+      "name": "Desol Gotas 20ml",
+      "description": "VITAMINAS E MINERAIS",
+      "price": 21.5,
+      "drogariaId": "ice-cream"
+    },
+    {
+      "id": "luftal",
+      "imagePath": "assets/img/medicamentos/chocpop.jpg",
+      "name": "Luftal Gotas 15ml",
+      "description": "Luftal Gotas alivia o desconforto abdominal.",
+      "price": 8.5,
+      "drogariaId": "ice-cream"
+    },
+    {
+      "id": "ritmoneuran",
+      "imagePath": "assets/img/medicamentos/icestd.jpg",
+      "name": "Ritmoneuran Com 20 Cápsulas",
+      "description": "CALMANTES NATURAIS",
+      "price": 1.5,
+      "drogariaId": "ice-cream"
+    },
+    {
+      "id": "dipirona-comprimido",
+      "imagePath": "assets/img/medicamentos/cup.jpg",
+      "name": "Dipirona comprimido",
+      "description": "Indicado para dores e febre",
+      "price": 5.5,
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "id": "dorflex",
+      "imagePath": "assets/img/medicamentos/straw.jpg",
+      "name": "Dorflex Com 36 Comprimidos",
+      "description": "Para DOR, FEBRE E INFLAMAÇÃO",
+      "price": 40.5,
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "id": "imecap",
+      "imagePath": "assets/img/medicamentos/cake.jpg",
+      "name": "Imecap Hair Com 60 Cápsulas",
+      "description": "VITAMINAS E MINERAIS",
+      "price": 5.9,
+      "drogariaId": "tasty-treats"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Julia",
+      "date": "2017-01-23T18:25:43",
+      "rating": 4.5,
+      "comments": "Tudo muito bom, entrega no tempo certo",
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "name": "Aline",
+      "date": "2016-12-12T18:25:43",
+      "rating": 3,
+      "comments": "NÃO recomendo. O recheio é só um creme, não tem camarão e nem carne",
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "name": "Renata",
+      "date": "2016-12-12T18:25:43",
+      "rating": 2,
+      "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "name": "Renata",
+      "date": "2016-12-12T18:25:43",
+      "rating": 5,
+      "comments": "Nunca deixou na mão, comida sempre deliciosa.",
+      "drogariaId": "bread-bakery"
+    },
+    {
+      "name": "Daniela",
+      "date": "2017-01-23T18:25:43",
+      "rating": 4,
+      "comments": "Sanduíche muito bom! Já pedi diversas vezes sempre bom!",
+      "drogariaId": "burger-house"
+    },
+    {
+      "name": "Laila",
+      "date": "2017-02-02T18:25:43",
+      "rating": 5,
+      "comments": "Melhor hambúrguer que já provei. Vai ser difícil voltar para mc e bk",
+      "drogariaId": "burger-house"
+    },
+    {
+      "name": "Suzana",
+      "date": "2016-12-12T18:25:43",
+      "rating": 3.5,
+      "comments": "Meu sanduíche chegou frio e todo desmontado =\\",
+      "drogariaId": "burger-house"
+    },
+    {
+      "name": "Eric",
+      "date": "2017-01-23T18:25:43",
+      "rating": 4.5,
+      "comments": "Excelente opção! Recomendo!",
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "name": "Amanda",
+      "date": "2017-02-02T18:25:43",
+      "rating": 2.5,
+      "comments": "Demorou muito e o café veio gelado",
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "name": "Carla",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4.8,
+      "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "name": "Rodrigo",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4,
+      "comments": "Muito rápida a entrega, mas é caro.",
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "name": "André",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4.5,
+      "comments": "Excelente como sempre!",
+      "drogariaId": "coffee-corner"
+    },
+    {
+      "name": "João",
+      "date": "2017-01-23T18:25:43",
+      "rating": 5,
+      "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
+      "drogariaId": "green-food"
+    },
+    {
+      "name": "Marcelo",
+      "date": "2017-02-02T18:25:43",
+      "rating": 4.5,
+      "comments": "Chegou muito rápido, antes mesmo da previsão",
+      "drogariaId": "green-food"
+    },
+    {
+      "name": "Fatinha",
+      "date": "2017-01-23T18:25:43",
+      "rating": 2,
+      "comments": "Ñ gostei dos sabores q pedi e achei o preço muito elevado",
+      "drogariaId": "ice-cream"
+    },
+    {
+      "name": "Lucas",
+      "date": "2017-02-02T18:25:43",
+      "rating": 2.5,
+      "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
+      "drogariaId": "ice-cream"
+    },
+    {
+      "name": "Jacira",
+      "date": "2017-02-01T18:25:43",
+      "rating": 4.5,
+      "comments": "Veio OK!",
+      "drogariaId": "ice-cream"
+    },
+    {
+      "name": "Ana",
+      "date": "2017-01-23T18:25:43",
+      "rating": 5,
+      "comments": "Rápido e sempre uma delicia!! Ja pedi 3x e sempre veio rapido e tudo certinho.",
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "name": "Larissa",
+      "date": "2017-02-02T18:25:43",
+      "rating": 2.5,
+      "comments": "A taxa de entrega poderia ser mais barata.",
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "name": "Jarbas",
+      "date": "2016-12-15T18:25:43",
+      "rating": 4.7,
+      "comments": "Excelente e chegou muito rápido!",
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "name": "Rafaela",
+      "date": "2017-01-12T18:25:43",
+      "rating": 5,
+      "comments": "Chegou rápido e perfeito!",
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "name": "Julia",
+      "date": "2016-12-12T18:25:43",
+      "rating": 1.5,
+      "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
+      "drogariaId": "tasty-treats"
+    },
+    {
+      "name": "Marília",
+      "date": "2016-12-20T18:25:43",
+      "rating": 4.5,
+      "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
+      "drogariaId": "tasty-treats"
+    }
+  ],
+  "orders": [
+    {
+      "address": "José Cavalcante Sobrinho",
+      "number": "120",
+      "optionalAddress": "BL 10 AP 508",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Avenida José Hipolito",
+      "number": "120",
+      "optionalAddress": "BL 10 AP 508",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "Avenida Frei Círilo",
+      "number": "200",
+      "optionalAddress": "BL 1 AP 408",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "burger"
+        },
+        {
+          "quantity": 1,
+          "menuId": "fries"
+        },
+        {
+          "quantity": 1,
+          "menuId": "coke.png"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": "José Cavalcante",
+      "number": "67",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Naatan James",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "José Cavalcante Sobrinho",
+      "number": "300",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Naate Johnny Oliveira",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "José Cavalcante",
+      "number": "120",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "greensandwich"
+        },
+        {
+          "quantity": 1,
+          "menuId": "chocpop"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Kaka Olie",
+      "email": "nn@mail.com",
+      "emailConfirmation": "nn@mail.com",
+      "address": "José Caval",
+      "number": "12",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 5,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 3,
+          "menuId": "icestd.png"
+        },
+        {
+          "quantity": 2,
+          "menuId": "bread"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "Johnny Oliveira",
+      "email": "n@mail.om",
+      "emailConfirmation": "n@mail.om",
+      "address": "José Caval",
+      "number": "332",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 6,
+          "menuId": "fries"
+        },
+        {
+          "quantity": 2,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 3,
+          "menuId": "coke.png"
+        },
+        {
+          "quantity": 2,
+          "menuId": "icestd.png"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "Jones Oliver",
+      "email": "jones@mail.com",
+      "emailConfirmation": "jones@mail.com",
+      "address": "José Sobrinho ",
+      "number": "2",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "iodara"
+        },
+        {
+          "quantity": 2,
+          "menuId": "ritmoneuran"
+        },
+        {
+          "quantity": 1,
+          "menuId": "dipirona-comprimido"
+        },
+        {
+          "quantity": 1,
+          "menuId": "dprev"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "James Olivier",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Castelo Branco",
+      "number": "2032",
+      "optionalAddress": "137",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "benegrip"
+        },
+        {
+          "quantity": 1,
+          "menuId": "eno-limao"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "James",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Barão ",
+      "number": "2340",
+      "optionalAddress": "APTO 505",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "paracetamol"
+        },
+        {
+          "quantity": 1,
+          "menuId": "bio-zinc"
+        },
+        {
+          "quantity": 1,
+          "menuId": "dipirona-comprimido"
+        },
+        {
+          "quantity": 1,
+          "menuId": "benegrip"
+        },
+        {
+          "quantity": 1,
+          "menuId": "eno-limao"
+        },
+        {
+          "quantity": 3,
+          "menuId": "dorflex"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "name": "James Oliver",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Oliveira Paiva",
+      "number": "2357",
+      "optionalAddress": "A",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "benegrip"
+        },
+        {
+          "quantity": 1,
+          "menuId": "paracetamol"
+        },
+        {
+          "quantity": 1,
+          "menuId": "dipirona-gotas"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "name": "James Oliver",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Oliveira Paiva",
+      "number": "2345",
+      "optionalAddress": "A",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "paracetamol"
+        },
+        {
+          "quantity": 1,
+          "menuId": "dipirona-comprimido"
+        },
+        {
+          "quantity": 1,
+          "menuId": "benegrip"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "name": "James Oliver",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Oliveira Paiva",
+      "number": "2345",
+      "optionalAddress": "A",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "bio-zinc"
+        },
+        {
+          "quantity": 1,
+          "menuId": "paracetamol"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "name": "James Oliver",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Oliveira Paiva",
+      "number": "2345",
+      "optionalAddress": "A",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "paracetamol"
+        },
+        {
+          "quantity": 1,
+          "menuId": "dipirona-comprimido"
+        },
+        {
+          "quantity": 1,
+          "menuId": "eno-limao"
+        },
+        {
+          "quantity": 1,
+          "menuId": "benegrip"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "name": "James Oliver ",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Oliveria Paiva",
+      "number": "876",
+      "optionalAddress": "Sala 14",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "paracetamol"
+        },
+        {
+          "quantity": 1,
+          "menuId": "bio-zinc"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "name": "James Oliver",
+      "email": "james@gmail.com",
+      "emailConfirmation": "james@gmail.com",
+      "address": "Avenida Oliveira Paiva",
+      "number": "2443",
+      "optionalAddress": "A",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "bio-zinc"
+        },
+        {
+          "quantity": 1,
+          "menuId": "paracetamol"
+        },
+        {
+          "quantity": 2,
+          "menuId": "benegrip"
+        },
+        {
+          "quantity": 1,
+          "menuId": "eno-limao"
+        },
+        {
+          "quantity": 1,
+          "menuId": "luftal"
+        },
+        {
+          "quantity": 2,
+          "menuId": "dorflex"
+        },
+        {
+          "quantity": 1,
+          "menuId": "desol-gotas"
+        }
+      ],
+      "id": 17
+    }
+  ],
+  "users": [
+    {
+      "name": "James Olivier",
+      "email": "james@gmail.com",
+      "password": "James19",
+      "id": 1
+    },
+    {
+      "name": "Jaqueline Marques",
+      "email": "jaqueline@gmail.com",
+      "password": "jaque20",
+      "id": 2
+    },
+    {
+      "name": "Maria Sales",
+      "email": "maria@mail.com",
+      "password": "Maria11",
+      "id": 3
+    }
+  ]
+}

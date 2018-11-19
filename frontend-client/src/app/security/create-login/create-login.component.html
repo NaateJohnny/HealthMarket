@@ -1,0 +1,40 @@
+<!-- INÍCIO DO CONTEÚDO -->
+<section class="content login-content" style="margin: 10% auto" [@loginAppeared]="loginState">
+    <div class="login-logo">
+         <!--<b>Health Market</b> | Login-->
+       <img class="logoLogin" src="assets/img/HealthMarket_logo.png" alt="">
+    </div>
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6 login-box-body">
+    <p class="login-box-msg">Por favor, realize o seu cadastro</p>
+
+    <form [formGroup]="createLoginForm">
+        <mt-input-container [showTip]="false">
+            <input type="text" formControlName="name" class="form-control" placeholder="Nome">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </mt-input-container>
+        <mt-input-container [showTip]="false">
+          <input type="text" formControlName="email" class="form-control" placeholder="Email">
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </mt-input-container>
+        <mt-input-container [showTip]="false">
+          <input type="password" formControlName="password" class="form-control" placeholder="Password">
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </mt-input-container>
+        <div class="row">
+            <div class="col-xs-4 .col-md-4">
+                <a class="text-white" [routerLink]="['/login']">
+                  <button type="button" class="btn btn-default btn-block btn-flat">
+                      Voltar
+                  </button>
+                </a>
+              </div>
+          <!-- /.col -->
+          <div class="col-xs-4 .col-md-4 pull-right">
+            <button type="submit" (click)="createLogin(createLoginForm.value)" class="btn btn-primary btn-block btn-flat" [disabled]="createLoginForm.invalid">Criar</button>
+          </div>
+          <!-- /.col -->
+      </div>
+    </form>
+    </div>
+  </section>
+  <!-- FIM DO CONTEÚDO -->

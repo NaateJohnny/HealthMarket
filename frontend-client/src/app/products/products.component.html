@@ -1,0 +1,18 @@
+<!-- INÍCIO DO CONTEÚDO -->
+<section class="content-header">
+    <h1><strong>Todos os Produtos</strong></h1>
+</section>
+
+<section class="content">
+    <div class="row">
+      <div *ngFor="let item of itemPrice | async">
+        <div class="col-sm-6 col-xs-12">
+          <mt-menu-item [menuItem]="item" (add)="shoppingCart.addItem($event)"></mt-menu-item>
+        </div>
+      </div>
+      <div style="display: none;">
+        <mt-shopping-cart #shoppingCart></mt-shopping-cart>
+      </div>
+    </div>
+</section>
+<!-- FIM DO CONTEÚDO -->
