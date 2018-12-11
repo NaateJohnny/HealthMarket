@@ -25,3 +25,4 @@ Route.get('/drugstores', "DrugstoreController.index")
 Route.post('/drugstore/:id/products', "ProductController.create")
 
 Route.get('/orders/actives/:drugstore_id', "OrderController.getAllOrdersByDrugstoreId")
+Route.get('/products', "ProductController.index")

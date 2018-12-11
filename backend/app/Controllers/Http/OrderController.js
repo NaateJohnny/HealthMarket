@@ -27,7 +27,7 @@ class OrderController {
    */
   async getAllOrdersByDrugstoreId ({ request, response, params }) {
     const orders = await Database.from('orders')
-          .where({
+          .where({drugstore_id: params.id,
                   is_active: true,
                   was_finalized: true} )
      return orders;
